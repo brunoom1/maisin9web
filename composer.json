@@ -1,0 +1,14 @@
+{
+    "name": "root/soumaisin9web",
+    "authors": [
+        {
+            "name": "Gabriel Mendonça",
+            "email": "gabrielmendoncanf@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.3",
+        "danielstjules/stringy": "^2.3",
+        "imagine/imagine": "^0.6.3"
+    }
+}
