@@ -9,6 +9,7 @@
     "require": {
         "vlucas/phpdotenv": "^2.3",
         "danielstjules/stringy": "^2.3",
-        "imagine/imagine": "^0.6.3"
+        "imagine/imagine": "^0.6.3",
+        "ext-gd": "*"
     }
 }
