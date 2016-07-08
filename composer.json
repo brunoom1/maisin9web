@@ -12,5 +12,10 @@
         "imagine/imagine": "^0.6.3",
         "ext-gd": "*",
         "ext-curl": "*"
+    },
+    "scripts":{
+        "post-install-cmd": [
+            "php -r \"mkdir(__DIR__ . '/users');\" "
+        ]
     }
 }
