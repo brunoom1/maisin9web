@@ -11,11 +11,12 @@
         "danielstjules/stringy": "^2.3",
         "imagine/imagine": "^0.6.3",
         "ext-gd": "*",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "facebook/php-sdk-v4": "^5.2"
     },
     "scripts":{
         "post-install-cmd": [
-            "php -r \"mkdir(__DIR__ . '/users');\" "
+            "php -r \"mkdir(__DIR__ . '/users');\""
         ]
     }
 }
