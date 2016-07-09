@@ -153,6 +153,7 @@
 
 					setTimeout(function(){
 						var url = 'https://www.facebook.com/photo.php?fbid=' +data.response.photo_id + '&set=ms.c.eJw9kMkRBDEIAzPa4gbln9iCbebbJXTAqiANOMwzU358QdQBwAKOYDHnesBRkmAhXVB5FJYPaEZ7FIEXBA1g%7E_hSKOUn4BZIubSpkWCAT60a1gOMoak%7E_ieEAXWRAntogXeB2F6QI5HpyfRwfOSazCcT1yPdxzTsTsAYMO0K%7E_Y4iiMVqG3en0KwaSA86VQ2qw18reWoqaYMZ9iBfTyBv5%7E_2oBytnQZvaBnVqd0mXggKw6w%7E_gOQGmBy.bps.a.1338987862796015.1073741827.100000544435251&type=3&makeprofile=1&profile_id=100000544435251&pp_source=photo_view';
+						location.target = "_blank";
 						location.href=url;
 					}, 3000);
 
