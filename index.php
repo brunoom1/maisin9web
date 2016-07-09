@@ -83,9 +83,32 @@
 	      version    : 'v2.6'
 	    });
 
-		// Place following code after FB.init call.
 		function onLogin(response) {
 		  if (response.status == 'connected') {
+
+
+		  	FB.api('/me/permissions', function(data){
+		  		var has_permission = false;
+
+		  		console.log(data);
+
+		  		for(var i =0; i < data.data.length; i++){
+		  			if(data.data[i].permission == "publish_actions" && data.data[i].status == "granted"){
+		  				has_permission = true;
+		  				break;
+		  			}
+		  		}
+
+		  		if(!has_permission){
+				    FB.login(function(response) {
+				      onLogin(response);
+				    }, {scope: 'publish_actions'});		  			
+
+				    console.log("Não há permissão para postagem");
+		  		}
+		  	});
+
+
 		    FB.api('/me?fields=name,first_name,picture.type(large){url,width,height,is_silhouette}', function(data) {
 
 		    	welcome = document.getElementById("fb-welcome");
